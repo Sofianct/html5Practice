@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML IMAGES</title>
+    <link rel="icon" href="assets/html5.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table, th, td {  
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            margin: 5% 15%;
+            padding: 5px;
+        }
+        table{
+            margin: 5% 15%;
+        }
+        .title{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .concept{
+            padding: 15px;
+            font-size: 1.3rem;
+            font-weight: normal;
+            text-align: left;
+        }
+        button{
+            margin: 0% 49%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">HTML IMAGES</h1>
+    <table>
+        <tr>
+            <td colspan="2" class="concept">
+                The HTML <b>&lt;img&gt;</b> tag is used to embed an image in a web page.<br>
+                Images are not technically inserted into a web page; images are linked to web pages. The <b>&lt;img&gt;</b> tag creates a holding space for the referenced image.<br>
+                The <b>&lt;img&gt;</b> tag is empty, it contains attributes only, and does not have a closing tag. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Syntax</h3>
+                <code>&lt;img src="url" alt="alternatetext" width="x" height="x"&gt;</code>
+            </td>
+            <td>
+                <img src="assets/LAGO.jpg" alt="LagoDiComo" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Syntax of an image with a link within</h3>
+                <code>&lt;img src="url" alt="alternatetext" width="x" height="x"&gt;</code>
+            </td>
+            <td>
+                <a href="https://goo.gl/maps/DkJELAkujpJQECb16" target="_blank">
+                    <img src="assets/lake.jpg" alt="LagoDiComo" width="300px">                    
+                </a>
+
+            </td>
+        </tr>
+    </table>
+    <a href="index.html">
+        <button>BACK</button>
+    </a>
+    <!--
+    < = &lt; 
+    > = &gt;
+    -->
+</body>
+</html>

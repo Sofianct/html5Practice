@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML TEXT</title>
+    <link rel="icon" href="assets/html5.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table, th, td {  
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            margin: 5% 15%;
+            padding: 5px;
+        }
+        .center {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .title{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .concept{
+            padding: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: left;
+        }
+        button{
+            margin: 0% 49%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">HTML TEXT</h1>
+    <table class="center">
+        <tr>
+            <td colspan="2" class="concept">
+                <h2>Formatting elements were designed to display special types of text:</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    <b>&lt;strong&gt;</b>This text is important!<b>&lt;/strong&gt;</b> 
+                </code>
+            </td>
+            <td>
+                <strong>This text is important!</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    The &lt;strike&gt; tag was used in HTML 4 to define strikethrough text.
+                    <br>Use the &lt;del&gt; tag to define deleted text:
+                </p>
+                <code>
+                    &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt;red!&lt;/p&gt; 
+                </code>
+            </td>
+            <td>
+                <p>My favorite color is <del>blue</del> red!</p> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    &lt;i&gt;This text is italic&lt;/i&gt; 
+                </code>
+            </td>
+            <td>
+                <i>This text is italic</i> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    &lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt; 
+                </code>
+            </td>
+            <td>
+                <p>This is <sub>subscripted</sub> text.</p> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    &lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt; 
+                </code>
+            </td>
+            <td>
+                <p>This is <sup>superscripted</sup> text.</p> 
+            </td>
+        </tr>
+    </table>
+    <a href="index.html">
+        <button>BACK</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML CONTAINERS</title>
+    <link rel="icon" href="assets/html5.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table, th, td {  
+            border: 1px solid black;
+            text-align: LEFT;
+            border-collapse: collapse;
+            margin: 5% 15%;
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+        .center {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        .title{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .myDiv {
+            background-color: peachpuff; 
+            padding: 5px; 
+            border-radius: 2%;
+            border: 5px outset skyblue;    
+            text-align: center; 
+        } 
+        .name{
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        button{
+            margin: 0% 49%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">HTML CONTAINERS</h1>
+    <table>
+        <tr>
+            <td class="important">
+                <p class="name">BLOCKQUOTE</p>
+                <code>
+                    &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt; 
+                        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally. 
+                    &lt;/blockquote&gt; 
+                </code>
+            </td>
+            <td>
+                <blockquote cite="http://www.worldw ildlife.org/who/index.html"> 
+                    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally. 
+                </blockquote> 
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <p class="name">DIV</p>
+                <code>
+                    &lt;div class="myDiv"&gt; <br>
+                    &lt;h2&gt;This is a heading in a div element&lt;/h2&gt;<br>                       
+                    &lt;p&gt;This is some text in a div element.&lt;/p&gt;<br>                       
+                    &lt;/div&gt; 
+                </code>
+            </td>
+            <td>
+                <div class="myDiv"> 
+                    <h2>This is a heading in a div element</h2>                       
+                    <p>This is some text in a div element.</p>                       
+                </div> 
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <p class="name">AREA <br>
+                    The &lt;area&gt; tag defines an area inside an image map (an image map is an image with clickable areas).
+                    <br><b>&lt;area&gt;</b> elements are always nested inside a &lt;map&gt; tag.
+                    <br><b>Note:</b> The usemap attribute in &lt;img&gt; is associated with the &lt;map&gt; element's name attribute, and creates a relationship between the image and the map.
+                </p>
+            </td>
+            <td>
+                <img src="assets/grogu.jpg" alt="GroguAndMug" usemap="#mug" width="300px" height="300px">
+                <map name="mug">
+                <area shape="rect" coords="114, 91, 157, 115" alt="BabyYoda" target="_blank" href="https://www.dynos.es/figura-diamond-collection-star-wars-the-mandalorian-the-child-con-sopa-resina-20-cm-milestones-12-s__DYD0000018473">
+                </map>
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <p class="name">SECTION</p>
+                <code>
+                    <b>The &lt;section&gt; tag defines a section in a document.</b>
+                </code>
+                <code>
+                    &lt;section&gt;
+                    &lt;h2&gt;WWF History&lt;/h2&gt;
+                    &lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;/p&gt;
+                    &lt;/section&gt;
+                </code>
+            </td>
+            <td>
+                <section>
+                    <h2>WWF History</h2>
+                    <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+                </section>
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <p class="name">ASIDE</p>
+                <p>
+                    <code>
+                        The <b>&lt;aside&gt;</b> tag defines some content aside from the content it is placed in.
+                        <br>
+                        The aside content should be indirectly related to the surrounding content.
+                        <br>
+                        Tip: The <b>&lt;aside&gt;</b> content is often placed as a sidebar in a document.
+                        <br>
+                        Note: The <b>&lt;aside&gt;</b> element does not render as anything special in a browser. However, you can use CSS to style the <b>&lt;aside&gt;</b> element (see example below).                        
+                    </code>
+
+                </p>
+            </td>
+            <td>
+                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+                <aside>
+                <h4>Epcot Center</h4>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                </aside>
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <p class="name">PARAGRAPHS</p>
+                <p>
+                    <code>
+                        The HTML <b>&lt;p&gt;</b> element defines a paragraph.
+
+                        A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+                    </code>
+                </p>
+            </td>
+            <td>
+                <p>This is a paragraph.</p>
+                <p>This is another paragraph.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <p class="name">ARTICLE</p> <!--With a Header element-->
+                <p>
+                    The <b>&lt;article&gt;</b> tag specifies independent, self-contained content.
+                    An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+                </p>
+                <code>
+                    <b>&lt;article&gt;</b><br>
+                        &lt;header&gt;
+                            &lt;h1&gt;A heading here&lt;/h1&gt;
+                            &lt;p&gt;Posted by John Doe&lt;/p&gt;
+                            &lt;p&gt;Some additional information here&lt;/p&gt;
+                            &lt;/header&gt;
+                        &lt;p&gt;Lorem Ipsum dolor set amet....&lt;/p&gt;<br>
+                    <b>&lt;/article&gt;</b>
+                </code>
+            </td>
+            <td>
+                <article>
+                    <header>
+                      <h1>A heading here</h1>
+                      <p>Posted by John Doe</p>
+                      <p>Some additional information here</p>
+                    </header>
+                    <p>Lorem Ipsum dolor set amet....</p>
+                </article>
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <p class="name">NAV</p>
+                <code>
+                    <b>&lt;nav&gt;</b>
+                    &lt;a href="/html/"&gt;HTML&lt;/a&gt; |<br>
+                    &lt;a href="/css/"&gt;CSS&lt;/a&gt; |<br>
+                    &lt;a href="/js/"&gt;JavaScript&lt;/a&gt; |<br>
+                    &lt;a href="/python/"&gt;Python&lt;/a&gt;<br>
+                    <b>&lt;/nav&gt;</b>
+                </code>
+            </td>
+            <td>
+                <nav>
+                    <a href="/html/">HTML</a> |
+                    <a href="/css/">CSS</a> |
+                    <a href="/js/">JavaScript</a> |
+                    <a href="/python/">Python</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <P class="name">FOOTER</P>
+                    <p>
+
+                    </p>
+                    The &lt;footer&gt; tag defines a footer for a document or section.
+
+                    A &lt;footer&gt; element typically contains:
+                <ul>
+                    <li>authorship information</li>
+                    <li>copyright information</li>
+                    <li>contact information</li>
+                    <li>sitemap</li>
+                    <li>back to top links</li>
+                    <li>related documents</li>
+                </ul>
+            </td>
+            <td>
+                <footer>
+                    <p>Author: Hege Refsnes</p>
+                    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+                </footer>
+            </td>
+        </tr>
+        <tr>
+            <td class="important">
+                <P class="name">TEMPLATE</P>
+                <p>
+                    The <b>&lt;template&gt;</b> tag is used as a container to hold some HTML content hidden from the user when the page loads.
+
+                    The content inside <b>&lt;template&gt;</b> can be rendered later with a JavaScript.
+                    You can use the <b>&lt;template&gt;</b> tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the <b>&lt;template&gt;</b> tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.
+                </p>
+            </td>
+            <td>
+                <button onclick="showContent()">Show hidden content</button>
+                <script>
+                    function showContent() {
+                        alert('Hello, how are you?')
+                    }
+                </script>
+            </td>
+        </tr>
+    </table>
+    <a href="index.html">
+        <button>BACK</button>
+    </a>
+    <!--
+        < = &lt; 
+        > = &gt;
+    -->
+</body>
+</html>
