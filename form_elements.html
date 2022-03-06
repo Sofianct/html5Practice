@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        /* agrupo por clases para crear estilos */
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div{
+            padding-left: 0.5cm;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+        }
+        textarea{display: block;}
+        .code-text{
+            padding-left:20%;
+        }
+        button{
+            margin: 0% 49%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="index.html">BACK</a>
+        <h1 style="text-align: center;">FORM ELEMENTS</h1>
+    </div>
+    <div>
+        <h2>INPUT</h2>
+        <p>The &lt;input&gt; tag specifies an input field where the user can enter data.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            &lt;input type="checkbox" id="checkbox" name="checkbox"/&gt;
+        </pre>
+        <label for="checkbox">Ticked me!</label><br>
+        <input type="checkbox" id="checkbox" name="checkbox"/>
+    </div>
+    <div>
+        <h3>TYPES</h3>
+        <ul>
+            <li>&lt;input type="button"&gt;</li>
+            <li>&lt;input type="checkbox"&gt;</li>
+            <li>&lt;input type="color"&gt;</li>
+            <li>&lt;input type="date"&gt;</li>
+            <li>&lt;input type="datetime-local"&gt;</li>
+            <li>&lt;input type="email"&gt;</li>
+            <li>&lt;input type="file"&gt;</li>
+            <li>&lt;input type="hidden"&gt;</li>
+            <li>&lt;input type="image"&gt;</li>
+            <li>&lt;input type="month"&gt;</li>
+            <li>&lt;input type="number"&gt;</li>
+            <li>&lt;input type="password"&gt;</li>
+            <li>&lt;input type="radio"&gt;</li>
+            <li>&lt;input type="range"&gt;</li>
+            <li>&lt;input type="reset"&gt;</li>
+            <li>&lt;input type="search"&gt;</li>
+            <li>&lt;input type="submit"&gt;</li>
+            <li>&lt;input type="tel"&gt;</li>
+            <li>&lt;input type="text"&gt;</li>
+            <li>&lt;input type="time"&gt;</li>
+            <li>&lt;input type="url"&gt;</li>
+            <li>&lt;input type="week"&gt;</li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>SELECT</h2>
+        <p>The &lt;select&gt; element is used to create a drop-down list.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            &lt;select name="colors" id="colors"&gt;
+                &lt;option value="azul"&gt;Azul&lt;option&gt;
+                &lt;option value="amarillo"&gt;Amarillo&lt;option&gt;
+                &lt;option value="rojo"&gt;Rojo&lt;option&gt;
+                &lt;option value="verde"&gt;Verde&lt;option&gt;
+                &lt;option value="negro"&gt;Negro&lt;option&gt;
+            &lt;/select>
+        </pre>
+        <label for="colors">Choose a color:</label><br>
+        <select name="colors" id="colors">
+            <option value="azul">Azul</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="negro">Negro</option>
+        </select>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>TEXTAREA</h2>
+        <p>The &lt;textarea&gt; tag defines a multi-line text input control.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            &lt;textarea id="textarea" name="textarea" rows="4" cols="50">A new revolutionary model 
+            to create school of the future and train top software engineers.&lt;/textarea&gt;
+        </pre>
+        <label for="textarea">Assembler School:</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50">A new revolutionary model to create school of the future and train top software engineers.
+        </textarea>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>BUTTON</h2>
+        <p>The &lt;button&gt; tag defines a clickable button.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            &lt;button id="button" type="button"&gt;Click to win the lottery!!&lt;button&gt;
+        </pre>
+        <p>This is a button element:</p><br>
+        <button id="button" type="button">Click to win the lottery!!</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>FIELDSET</h2>
+        <p>The &lt;fieldset&gt; tag is used to group related elements in a form.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            &lt;fieldset id="fieldset" name="fieldset" style="width: 15%;"&gt;
+                &lt;legend&gt;&lt;Personal Details&gt;&lt;legend&gt;
+                &lt;label for="fname">First Name: &lt;label&gt;
+                &lt;input type="text" id="fname" name="fname"&gt;
+                &lt;label for="lname">Last Name: &lt;label&gt;
+                &lt;input type="text" id="lname" name="lname"&gt;
+                &lt;label for="tel">Number Phone: &lt;label&gt;
+                &lt;input type="tel" id="tel" name="tel" placeholder="+34 656 768 443" 
+                    pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"&gt;
+            &lt;/fieldset&gt;
+        </pre>
+        <p>This is a fieldset element:</p><br>
+        <fieldset id="fieldset" name="fieldset" style="width: 15%;">
+            <legend><b>Personal Details</b></legend>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="tel">Number Phone: </label>
+            <input type="tel" id="tel" name="tel" placeholder="+34 656 768 443" pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        </fieldset>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>DATALIST</h2>
+        <p>The &lt;datalist&gt; tag specifies a list of pre-defined options for an &lt;input&gt; element.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            &lt;input list="carbrands" name="carbrands" id="carsbrands"/&gt;
+            &lt;datalist id="carbrands"&gt;
+               &lt;option value="VW"&gt;
+               &lt;option value="Audi"&gt;
+               &lt;option value="Mercedes"&gt;
+               &lt;option value="Toyota"&gt;
+               &lt;option value="Renault"&gt;
+            &lt;/datalist&gt;
+        </pre>
+        <p>This is a datalist element:</p>
+        <label for="list">Car Brands:</label><br>
+        <input list="carbrands" id="list" name="carbrands" />
+        <datalist id="carbrands">
+            <option value="VW">
+            <option value="Audi">
+            <option value="Mercedes">
+            <option value="Toyota">
+            <option value="Renault">
+        </datalist>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>OUTPUT</h2>
+        <p>The &lt;outputt&gt; tag is used to represent the result of a calculation (like one performed by a script).</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            &lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+                &lt;input type="range" id="a" value="50"&gt;
+                +&lt;input type="number" id="b" value="25"&gt;
+                =&lt;output name="x" for="a b"&gt;&lt;output&gt;
+            &lt;/form&gt;
+        </pre>
+        <p>This is a output element:</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" value="50">
+            +<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>  <!-- It specifies the list of other element's ids which indicates the relationship between the result of the calculation and the input elements.-->
+        </form>
+    </div>
+    <a href="/index.html">
+        <button>BACK</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Types</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <article>
+      <header>
+        <a href="/index.html">
+          <button>BACK</button>
+        </a>
+        <h1>&lt;input&gt;: The Input (Form Input) element</h1>
+        <p>
+          The <code>&lt;input&gt;</code> HTML element is used to create
+          interactive controls for web-based forms in order to accept data from
+          the user; a wide variety of types of input data and control widgets
+          are available, depending on the device and user agent. This element is
+          one of the most powerful and complex in all of HTML due to the sheer
+          number of combinations of input types and attributes.
+        </p>
+        <p>
+          Syntax: <code><b>&lt;input type="" attribute=""&gt;</b></code>
+        </p>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Types</th>
+            <th>Description</th>
+            <th>Basic example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <b>Button</b>
+            </td>
+            <td>
+              <code><b>&lt;input type="button" value="Click me"&gt;</b></code
+              ><br />
+              A push button with no default behavior displaying the value of the
+              value attribute, empty by default.
+            </td>
+            <td>
+              <input type="button" value="Click me" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Checkbox</b></td>
+            <td>
+              <code><b>&lt;input type="checkbox" checked &gt;</b></code
+              ><br />
+              A check box allowing single values to be selected/deselected.
+            </td>
+            <td><input type="checkbox" checked /></td>
+          </tr>
+          <tr>
+            <td><b>Color</b></td>
+            <td>
+              <code><b>&lt;input type="color"&gt;</b></code
+              ><br />
+              A control for specifying a color; opening a color picker when
+              active in supporting browsers.
+            </td>
+            <td>
+              <input type="color" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Date</b></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="date" min="1920-01-01"
+                  max="2100-01-01"&gt;</b
+                ></code
+              ><br />
+              A control for entering a date (year, month, and day, with no
+              time). Opens a date picker or numeric wheels for year, month, day
+              when active in supporting browsers.
+            </td>
+            <td>
+              <input type="date" min="1920-01-01" max="2100-01-01" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Month</b></td>
+            <td>
+              <code><b>&lt;input type="month" min="2022-01"&gt;</b></code
+              ><br />
+              A control for entering a month and year, with no time zone.
+            </td>
+            <td>
+              <input type="month" min="2022-01" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Email</b></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="email" pattern=".+@globex\.com"
+                  placeholder="myemail@global.com" required&gt;</b
+                ></code
+              ><br />
+              A field for editing an email address. Looks like a text input, but
+              has validation parameters and relevant keyboard in supporting
+              browsers and devices with dynamic keyboards.
+            </td>
+            <td>
+              <input
+                type="email"
+                pattern=".+@globex\.com"
+                size="30"
+                placeholder="myemail@global.com"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><b>File</b></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="file" accept="mage/png, image/jpeg"&gt;</b
+                ></code
+              ><br />
+              A field for editing an email address. Looks like a text input, but
+              has validation parameters and relevant keyboard in supporting
+              browsers and devices with dynamic keyboards.
+            </td>
+            <td>
+              <input type="file" accept="mage/png, image/jpeg" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Hidden</b></td>
+            <td>
+              <code><b>&lt;input type="hidden"&gt;</b></code
+              ><br />
+              A control that is not displayed but whose value is submitted to
+              the server. There is an example in the next column, but it's
+              hidden!
+            </td>
+            <td>
+              <input type="hidden" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Image</b></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="image" alt="there is no real picture
+                  here"&gt;</b
+                ></code
+              ><br />
+              A graphical submit button. Displays an image defined by the src
+              attribute. The alt attribute displays if the image src is missing.
+            </td>
+            <td>
+              <input type="image" alt="there is no real picture here" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Number</b></td>
+            <td>
+              <code
+                ><b>&lt;input type="number" placeholder="Number"&gt;</b></code
+              ><br />
+              A control for entering a number. Displays a spinner and adds
+              default validation when supported. Displays a numeric keypad in
+              some devices with dynamic keypads.
+            </td>
+            <td><input type="number" placeholder="Number" /></td>
+          </tr>
+          <tr>
+            <td><b>Password</b></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="password" placeholder="Enter your password"
+                  required&gt;</b
+                ></code
+              ><br />
+              A single-line text field whose value is obscured. Will alert user
+              if site is not secure.
+            </td>
+            <td>
+              <input
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter your password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Radio</b></td>
+            <td>
+              <code><b>&lt;input type="radio"&gt;</b></code
+              ><br />
+              A radio button, allowing a single value to be selected out of
+              multiple choices with the same name value.
+            </td>
+            <td><input type="radio" /></td>
+          </tr>
+          <tr>
+            <td><b>Range</b></td>
+            <td>
+              <code><b>&lt;input type="range" min="0" max="100"&gt;</b></code
+              ><br />
+              A control for entering a number whose exact value is not
+              important. Displays as a range widget defaulting to the middle
+              value. Used in conjunction min and max to define the range of
+              acceptable values.
+            </td>
+            <td><input type="range" min="0" max="100" /></td>
+          </tr>
+          <tr>
+            <td><b>Reset</b></td>
+            <td>
+              <code><b>&lt;input type="reset"&gt;</b></code
+              ><br />
+
+              A button that resets the contents of the form to default values.
+              Not recommended.
+            </td>
+            <td><input type="reset" /></td>
+          </tr>
+          <tr>
+            <td><b>Search</b></td>
+            <td>
+              <code><b>&lt;input type="search" name="q"&gt;</b></code
+              ><br />
+
+              A single-line text field for entering search strings. Line-breaks
+              are automatically removed from the input value. May include a
+              delete icon in supporting browsers that can be used to clear the
+              field. Displays a search icon instead of enter key on some devices
+              with dynamic keypads.
+            </td>
+            <td><input type="search" name="q" /></td>
+          </tr>
+          <tr>
+            <td><b>Submit</b></td>
+            <td>
+              <code><b>&lt;input type="submit"&gt;</b></code
+              ><br />
+              A button that submits the form.
+            </td>
+            <td><input type="submit" /></td>
+          </tr>
+          <tr>
+            <td><strong>Tel</strong></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="tel" required placeholder="Phone number"
+                  &gt;</b
+                ></code
+              ><br />
+
+              A control for entering a telephone number. Displays a telephone
+              keypad in some devices with dynamic keypads.
+            </td>
+            <td>
+              <input
+                type="tel"
+                name="phone"
+                required
+                placeholder="Phone number"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Text</b></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="text" placeholder="Type your name" &gt;</b
+                ></code
+              ><br />
+              The default value. A single-line text field. Line-breaks are
+              automatically removed from the input value.
+            </td>
+            <td><input type="text" placeholder="Type your name" /></td>
+          </tr>
+          <tr>
+            <td><b>Time</b></td>
+            <td>
+              <code><b>&lt;input type="time"&gt;</b></code
+              ><br />
+              A control for entering a time value with no time zone.
+            </td>
+            <td><input type="time" /></td>
+          </tr>
+          <tr>
+            <td><b>URL</b></td>
+            <td>
+              <code
+                ><b
+                  >&lt;input type="url" placeholder="https://example.com"
+                  &gt;</b
+                ></code
+              ><br />
+
+              A field for entering a URL. Looks like a text input, but has
+              validation parameters and relevant keyboard in supporting browsers
+              and devices with dynamic keyboards.
+            </td>
+            <td><input type="url" placeholder="https://example.com" /></td>
+          </tr>
+          <tr>
+            <td><b>Week</b></td>
+            <td>
+              <code><b>&lt;input type="week"&gt;</b></code
+              ><br />
+              A control for entering a date consisting of a week-year number and
+              a week number with no time zone.
+            </td>
+            <td><input type="week" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <a href="/index.html">
+      <button>BACK</button>
+    </a>
+  </body>
+</html>

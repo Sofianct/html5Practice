@@ -1,0 +1,159 @@
+/*******************************/
+/* GENERAL */
+/*******************************/
+* {
+  margin: auto 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+article {
+  padding: 2rem 2rem 4rem 2rem;
+}
+header {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+code {
+  font-size: 18px;
+}
+
+/* NAVEGATION */
+nav a {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  border-bottom: 1px solid #333;
+  margin-bottom: 1rem;
+}
+
+/*******************************/
+/* TABLE */
+/*******************************/
+
+table {
+  padding: 2rem 0 4rem 0;
+}
+
+thead {
+  background-color: #555;
+  color: #fff;
+}
+
+th {
+  padding: 0.8rem;
+}
+
+td {
+  border: 1px solid #333;
+  padding: 0.8rem;
+  line-height: 1.6;
+}
+
+span {
+  font-weight: 400;
+}
+button,
+input {
+  padding: 0.5rem 1rem;
+}
+
+/*******************************/
+/* GRAPHICS */
+/*******************************/
+
+canvas {
+  background-color: #59b394;
+}
+
+.attribute {
+  padding: 1rem;
+}
+
+.svg-study {
+  width: 4rem;
+}
+
+/*******************************/
+/* LISTS */
+/*******************************/
+
+.list {
+  padding: 0 0 0 2rem;
+}
+
+.unordered-list,
+.ordered-list {
+  padding-left: 3rem;
+}
+
+/* ul */
+.list-square,
+.list-circle,
+.list-disc {
+  margin-bottom: 4rem;
+}
+
+.square,
+.circle,
+.disc {
+  list-style-type: square;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 15%;
+  padding: 10px 40px 10px 40px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  background-color: #555;
+}
+
+.circle {
+  list-style-type: circle;
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+div .list-disc:last-child {
+  margin-bottom: 5rem;
+}
+
+/* ol */
+.list-reversed,
+.list-start,
+.list-type {
+  margin-bottom: 4rem;
+}
+
+.reversed,
+.start,
+.type {
+  border: 1px solid black;
+  border-radius: 4px;
+  border-radius: 4px;
+  width: 15%;
+  padding: 10px 40px 10px 40px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  background-color: #555;
+}

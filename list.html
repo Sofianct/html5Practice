@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <a href="/index.html">
+      <button>BACK</button>
+    </a>
+    <article>
+      <header>
+        <h1>Lists element</h1>
+      </header>
+      <div class="ul">
+        <h2>&lt;ul&gt;: The Unordered List element</h2>
+        <p>
+          The <code>&lt;ul&gt;</code> HTML element represents an unordered list
+          of items, typically rendered as a bulleted list.
+        </p>
+      </div>
+      <div class="attribute">
+        <h3>Attributes</h3>
+
+        <div class="unordered-list">
+          <div class="list-square">
+            <code><b>square</b></code>
+            <p>This atribute create dot square in the list</p>
+            <code
+              >&lt;ul&gt;<br />
+              &lt;li&gt;Onion&lt;/li&gt;<br />
+              &lt;li&gt;Tomate&lt;/li&gt;<br />
+              &lt;li&gt;Garlic&lt;/li&gt;<br />
+              &lt;/ul&gt;</code
+            >
+            <ul class="square">
+              <li>Onion</li>
+              <li>Tomate</li>
+              <li>Garlic</li>
+            </ul>
+          </div>
+
+          <div class="list-circle">
+            <code><b>circle</b></code>
+            <p>This atribute create dot cicle in the list.</p>
+
+            <code
+              >&lt;ul&gt;<br />
+              &lt;li&gt;Bier&lt;/li&gt;<br />
+              &lt;li&gt;Wine&lt;/li&gt;<br />
+              &lt;li&gt;Water&lt;/li&gt;<br />
+              &lt;/ul&gt;</code
+            >
+            <ul class="circle">
+              <li>Bier</li>
+              <li>Wine</li>
+              <li>Water</li>
+            </ul>
+          </div>
+
+          <div class="list-disc">
+            <code><b>disc</b></code>
+            <p>This atribute create dot disc in the list.</p>
+            <code
+              >&lt;ul&gt;<br />
+              &lt;li&gt;Orange&lt;/li&gt;<br />
+              &lt;li&gt;Limon&lt;/li&gt;<br />
+              &lt;li&gt;Watermelon&lt;/li&gt;<br />
+              &lt;/ul&gt;</code
+            >
+            <ul class="disc">
+              <li>Orange</li>
+              <li>Limon</li>
+              <li>Watermelon</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ol"></div>
+        <h2>&lt;ol&gt;: The ordered List element.</h2>
+        <p>
+          The <code>&lt;ol&gt;</code> HTML element represents an ordered list of
+          items, typically rendered as a numbered list.
+        </p>
+
+        <h3>Attributes</h3>
+        <div class="ordered-list">
+          <div class="list-reversed">
+            <code><b>reversed</b></code>
+            <p>
+              This Boolean attribute specifies that the list's items are in
+              reverse order. Items will be numbered from high to low.
+            </p>
+            <code
+              >&lt;ol reversed &gt;<br />
+              &lt;li&gt;Ricardo&lt;/li&gt;<br />
+              &lt;li&gt;Pablo&lt;/li&gt;<br />
+              &lt;li&gt;Soraia&lt;/li&gt;<br />
+              &lt;/ol&gt;</code
+            >
+            <ol reversed class="reversed">
+              <li>Ricardo</li>
+              <li>Pablo</li>
+              <li>Soraia</li>
+            </ol>
+          </div>
+
+          <div class="list-start">
+            <code><b>start</b></code>
+            <p>
+              An integer to start counting from for the list items. Always an
+              Arabic numeral (1, 2, 3, etc.), even when the numbering
+              <code>type</code> is letters or Roman numerals. For example, to
+              start numbering elements from the letter "d" or the Roman numeral
+              "iv," use <code>start="6"</code>.
+            </p>
+            <code
+              >&lt;ol&gt;<br />
+              &lt;li&gt;Monica&lt;/li&gt;<br />
+              &lt;li&gt;Peter&lt;/li&gt;<br />
+              &lt;li&gt;Layla&lt;/li&gt;<br />
+              &lt;/ol&gt;</code
+            >
+            <ol start="6" class="start">
+              <li>Monica</li>
+              <li>Peter</li>
+              <li>Layla</li>
+            </ol>
+          </div>
+
+          <div class="list-type">
+            <code><b>type</b></code>
+            <p>Sets the numbering type:<br /></p>
+            <ul>
+              <li><code>a</code> for lowercase letters</li>
+              <li><code>A</code> for uppercase letters</li>
+              <li><code>i</code> for lowercase Roman numerals</li>
+              <li><code>I</code> for uppercase Roman numerals</li>
+              <li><code>1</code> for numbers (default)</li>
+            </ul>
+            <code
+              >&lt;ol type="a" &gt;<br />
+              &lt;li&gt;HTML&lt;/li&gt;<br />
+              &lt;li&gt;CSS&lt;/li&gt;<br />
+              &lt;li&gt;JavaScript&lt;/li&gt;<br />
+              &lt;/ol&gt;</code
+            >
+            <ol type="a" class="type">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </article>
+  <a href="/index.html">
+      <button>BACK</button>
+  </a>
+  </body>
+</html>

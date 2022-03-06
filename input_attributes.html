@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes</title>
+    <style>
+        /* agrupo por clases para crear estilos */
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div{
+            padding-left: 0.5cm;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+        }
+        textarea{display: block;}
+        .code-text{
+            padding-left:20%;
+        }
+        button{
+            margin: 0% 49%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/index.html">
+            <button>BACK</button>
+        </a>
+        <h1 style="text-align: center;">INPUT ATTRIBUTES</h1>
+    </div>
+    <div>
+        <h2>VALUE</h2>
+        <p>The value attribute on an &lt;input&gt; tag sets the value of the element.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="school" name="school" value="Assembler"&gt;
+        </code>
+        <p>Input type "text" with a value="Assembler"</p>
+        <label for="school">School:</label><br>
+        <input type="text" id="school" name="school" value="Assembler"/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>READONLY</h2>
+        <p>The readonly attribute on an &lt;input&gt; tag specifies that the input element is read-only, which means the field is non-editable.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="book" name="book" value="The world of yesterday" readonly&gt;
+        </code>
+        <p>Input type "text" with a value="The world of yesterday"</p>
+        <label for="book">Title Book:</label><br>
+        <input type="text" id="book" name="book" value="The world of yesterday" readonly/>
+        <p><strong>Note:</strong> The field is not editable, but its value is including during form submission.
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>DISABLED</h2>
+        <p>The disabled attribute on an &lt;input&gt; tag disables the input element.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="name" name="name" disabled&gt;
+        </code>
+        <p>Input type "text" with no value and disabled.</p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" disabled/>
+        <p><strong>Note:</strong> The input field is not usable and its value is not included during form submission.
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>SIZE</h2>
+        <p>The size attribute on an &lt;input&gt; tag defines the character width of the element.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="subject" name="subject" value="Mathematics" size="25"&gt;
+        </code>
+        <p>The textbox is 25 characters wide.</p>
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" value="Mathematics" size="25"/>
+        <p><strong>Note:</strong> The input field has 25 characters visibles.
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>MAXLENGHT</h2>
+        <p>The maxlength attribute on an &lt;input&gt; tag specifies the maximum number of characters that can be entered in the input field.</p>
+        <p>Default is 524,288 characters.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="city" name="city" maxlength="10"/>
+        </code>
+        <p>The input text allows to introduce 10 characters.</p>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" maxlength="10"/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>MIN AND MAX</h2>
+        <p>The min attribute on an &lt;input&gt; tag sets the minimum value for that element.</p>
+        <p>The max attribute on an &lt;input&gt; tag sets the maximun value for that element.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="quantity" name="quantity" min="1" max="10" value="3"&gt;
+        </code>
+        <p>Values between 1 and 10.</p>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="3"/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>MULTIPLE</h2>
+        <p>The multiple attribute is a boolean attribute.
+            When present, it specifies that the user is allowed to enter/select more than one value.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="file" id="files" name="files" alt="No file choosen" multiple &gt;
+        </code>
+        <p>Try to select more than one file:</p>
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple /><br>
+        <input type="submit">
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>PATTERN</h2>
+        <p>The pattern attribute on an &lt;input&gt; tag specifies a regular expression which validates the input data before form submission.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="idcard" name="idcard" pattern="[0-9]]{8}[A-Z]"/>
+        </code>
+        <p>Introduce your national identity card:</p>
+        <input type="text" id="idcard" name="idcard" pattern="[0-9]]{8}[A-Z]"/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>PLACEHOLDER</h2>
+        <p>The placeholder attribute specifies a short hint that describes the expected value of an input field.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="idnumber" name="idnumber" placeholder="e.g, 99999999X" pattern="[0-9]]{8}[A-Z]"&gt;
+        </code>
+        <p>Introduce your national identity card:</p>
+        <input type="text" id="idnumber" name="idnumber" placeholder="e.g, 99999999X" pattern="[0-9]]{8}[A-Z]"/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>REQUIRED</h2>
+        <p>The required attribute on an &lt;input&gt; tag specifies that data must be provided before submitting the form.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="firstname" name="firstname" required&gt;
+        </code>
+        <label for="firstname">First name</label><br/>
+        <input type="text" id="firstname" name="firstname" required/><br/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>STEP</h2>
+        <p>The step attribute on an &lt;input&gt; tag sets the stepped increment value for the input element.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="number" id="numberstep" name="numberstep" step="5"&gt;
+        </code>
+        <br><br>
+        <label for="numberstep">The number control increments and decrements in intervals of 5.</label><br/>
+        <input type="number" id="numberstep" name="numberstep" step="5"/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>AUTOFOCUS</h2>
+        <p>The autofocus attribute sets focus to the input element upon page load.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input type="text" id="entername" name="entername" placeholder="Enter your name" autofocus&gt;
+        </code>
+        <input type="text" id="entername" name="entername" placeholder="Enter your name" autofocus/>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>HEIGHT AND WIDTH</h2>
+        <p>The height attribute specifies the height of the element, in pixels.</p>
+        <p>The width attribute specifies the width of the element, in pixels.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;canvas id="myCanvas" width="200" height="200" style="border:1px solid&gt;&lt;canvas&gt;
+        </code>
+        <p>Canvas's size 200x200</p>
+        <canvas id="myCanvas" width="200" height="200" style="border:1px solid"></canvas>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>LIST</h2>
+        <p>The list attribute on an &lt;input&gt; tag associates the input element with a &lt;datalist&gt;.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <pre class="code-text">
+            <code>
+                &lt;input list="favplaces" name="favplaces" id="places"&gt;
+                &lt;datalist id="places"&gt;
+                   &lt;option value="Playa"&gt;
+                   &lt;option value="Montaña"&gt;
+                &lt;datalist&gt;
+            </code>
+        </pre>
+        <label for="places">Choose one option:</label><br>
+        <input list="favplaces" name="favplaces" id="places"/>
+        <datalist id="favplaces">
+            <option value="playa">
+            <option value="Montaña">
+        </datalist>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <h2>FORM</h2>
+        <p>The form attribute specifies the form the element belongs to.</p>
+    </div>
+    <div>
+        <h3>EXAMPLE</h3>
+        <code class="code-text">
+            &lt;input form="myform" type="text" name="lastname" placeholder="Last name"&gt;
+        </code>
+        <p>This input text is associated with "myform" forms</p>
+        <form id="myform"></form>
+        <input form="myform" type="text" name="lastname" placeholder="Last name"/>
+    </div>
+    <a href="/index.html">
+        <button>BACK</button>
+    </a>
+</body>
+</html>
